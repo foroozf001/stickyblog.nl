@@ -2,7 +2,7 @@
 # Source code
 - name: Clone project repository
   git:
-    repo: https://github.com/foroozf001/my-sticky-blog.git
+    repo: git@github.com:foroozf001/stickyblog.nl.git
     dest: /opt/stickyblog
     version: main
 
@@ -37,19 +37,6 @@
   community.docker.docker_compose:
     project_src: /opt/stickyblog/wordpress
     state: absent
-
-# - name: Remove docker image
-#   docker_image:
-#     state: absent
-#     name: "nginx"
-#     tag: latest
-
-# - name: Pull docker image
-#   docker_image:
-#     name: "nginx:latest"
-#     source: pull
-#     force_source: yes
-#     state: present
 
 - name: Launch Stickyblog.nl
   community.docker.docker_compose:
