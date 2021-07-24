@@ -8,10 +8,10 @@ terraform {
     }
   }
   backend "remote" {
-    organization = "stickyblog"
+    organization = "www-stickyblog"
 
     workspaces {
-      name = "my-sticky-blog"
+      name = "production"
     }
   }
 }

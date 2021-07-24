@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-03caf24deed650e2c" # data.aws_ami.ubuntu.id
+  ami                    = var.ami # "ami-03caf24deed650e2c" # data.aws_ami.ubuntu.id
   key_name               = "private"
   instance_type          = var.ec2_instance_type
   subnet_id              = aws_subnet.web.id
