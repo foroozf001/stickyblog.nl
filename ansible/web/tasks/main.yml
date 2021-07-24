@@ -2,7 +2,7 @@
 # Source code
 - name: Clone project repository
   git:
-    repo: git@github.com:foroozf001/stickyblog.nl.git
+    repo: https://github.com/foroozf001/stickyblog.nl.git
     dest: /opt/stickyblog
     version: main
 
