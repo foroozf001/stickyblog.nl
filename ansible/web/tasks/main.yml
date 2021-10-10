@@ -9,7 +9,7 @@
 # Certificates
 - name: Copy public key
   ansible.builtin.copy:
-    src: /home/foroozf001/Certs/stickyblog.nl.crt
+    src: /home/fforoozan/Certificates/stickyblog.nl.crt
     dest: /data/certs
     owner: ubuntu
     group: ubuntu
@@ -17,7 +17,7 @@
 
 - name: Copy private key
   ansible.builtin.copy:
-    src: /home/foroozf001/Certs/stickyblog.nl.key
+    src: /home/fforoozan/Certificates/stickyblog.nl.key
     dest: /data/certs
     owner: ubuntu
     group: ubuntu
