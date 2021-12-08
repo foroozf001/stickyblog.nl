@@ -1,4 +1,0 @@
----
-vm_user: ubuntu
-vm_distro: focal
-docker_compose_version: "1.29.2"
